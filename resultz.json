@@ -4,8 +4,8 @@
   "numFailedTestSuites": 0,
   "numPendingTestSuites": 0,
   "numTotalTests": 9,
-  "numPassedTests": 0,
-  "numFailedTests": 9,
+  "numPassedTests": 4,
+  "numFailedTests": 5,
   "numPendingTests": 0,
   "numTodoTests": 0,
   "startTime": 1714656341759,
@@ -18,64 +18,40 @@
             ""
           ],
           "fullName": " App.jsxe QueryClientProvider eklenmiş",
-          "status": "failed",
+          "status": "passed",
           "title": "App.jsxe QueryClientProvider eklenmiş",
-          "duration": 24,
-          "failureMessages": [
-            "expected '/*eslint-disablejsx-a11y/anchor-is-va…' to include '<QueryClientProvider'"
-          ],
-          "location": {
-            "line": 50,
-            "column": 19
-          }
+          "duration": 21,
+          "failureMessages": []
         },
         {
           "ancestorTitles": [
             ""
           ],
           "fullName": " SideBar componentinde useEffect kaldırılmış",
-          "status": "failed",
+          "status": "passed",
           "title": "SideBar componentinde useEffect kaldırılmış",
-          "duration": 8,
-          "failureMessages": [
-            "expected 'importaxiosfrom\\'axios\\';importReact,…' to not include 'useEffect(()=>{'"
-          ],
-          "location": {
-            "line": 54,
-            "column": 27
-          }
+          "duration": 4,
+          "failureMessages": []
         },
         {
           "ancestorTitles": [
             ""
           ],
           "fullName": " Contact componentinde useEffect kaldırılmış",
-          "status": "failed",
+          "status": "passed",
           "title": "Contact componentinde useEffect kaldırılmış",
-          "duration": 5,
-          "failureMessages": [
-            "expected 'importaxiosfrom\\'axios\\';importReact,…' to not include 'useEffect(()=>{'"
-          ],
-          "location": {
-            "line": 58,
-            "column": 27
-          }
+          "duration": 13,
+          "failureMessages": []
         },
         {
           "ancestorTitles": [
             ""
           ],
           "fullName": " Contactlar listeleniyor",
-          "status": "failed",
+          "status": "passed",
           "title": "Contactlar listeleniyor",
           "duration": 6,
-          "failureMessages": [
-            "expected 'Once tanStackQueryi ekleyin ve useEff…' to be 'Implemented' // Object.is equality"
-          ],
-          "location": {
-            "line": 62,
-            "column": 25
-          }
+          "failureMessages": []
         },
         {
           "ancestorTitles": [
@@ -84,13 +60,13 @@
           "fullName": " New Butonu Çalışıyor",
           "status": "failed",
           "title": "New Butonu Çalışıyor",
-          "duration": 5,
+          "duration": 42,
           "failureMessages": [
-            "expected 'Once tanStackQueryi ekleyin ve useEff…' to be 'Implemented' // Object.is equality"
+            "Class constructor QueryClient cannot be invoked without 'new'"
           ],
           "location": {
-            "line": 68,
-            "column": 25
+            "line": 39,
+            "column": 22
           }
         },
         {
@@ -100,13 +76,13 @@
           "fullName": " Yeni kullanıcı kayıt ediliyor",
           "status": "failed",
           "title": "Yeni kullanıcı kayıt ediliyor",
-          "duration": 4,
+          "duration": 5,
           "failureMessages": [
-            "expected 'Once tanStackQueryi ekleyin ve useEff…' to be 'Implemented' // Object.is equality"
+            "Class constructor QueryClient cannot be invoked without 'new'"
           ],
           "location": {
-            "line": 75,
-            "column": 25
+            "line": 39,
+            "column": 22
           }
         },
         {
@@ -118,11 +94,11 @@
           "title": "Home Butonu Çalışıyor",
           "duration": 4,
           "failureMessages": [
-            "expected 'Once tanStackQueryi ekleyin ve useEff…' to be 'Implemented' // Object.is equality"
+            "Class constructor QueryClient cannot be invoked without 'new'"
           ],
           "location": {
-            "line": 92,
-            "column": 25
+            "line": 39,
+            "column": 22
           }
         },
         {
@@ -132,13 +108,13 @@
           "fullName": " Kullanıcı detaylarını gösteriyor",
           "status": "failed",
           "title": "Kullanıcı detaylarını gösteriyor",
-          "duration": 4,
+          "duration": 3,
           "failureMessages": [
-            "expected 'Once tanStackQueryi ekleyin ve useEff…' to be 'Implemented' // Object.is equality"
+            "Class constructor QueryClient cannot be invoked without 'new'"
           ],
           "location": {
-            "line": 99,
-            "column": 25
+            "line": 39,
+            "column": 22
           }
         },
         {
@@ -148,18 +124,18 @@
           "fullName": " Kullanıcıyı siliyor",
           "status": "failed",
           "title": "Kullanıcıyı siliyor",
-          "duration": 5,
+          "duration": 6,
           "failureMessages": [
-            "expected 'Once tanStackQueryi ekleyin ve useEff…' to be 'Implemented' // Object.is equality"
+            "Class constructor QueryClient cannot be invoked without 'new'"
           ],
           "location": {
-            "line": 107,
-            "column": 25
+            "line": 39,
+            "column": 22
           }
         }
       ],
-      "startTime": 1714656342590,
-      "endTime": 1714656342655,
+      "startTime": 1714675548759,
+      "endTime": 1714675548864,
       "status": "failed",
       "message": "",
       "name": "/Users/ahmet/Documents/GitHub/projects/s10-g4-t1-Contacts-App/src/__tests__/index.test.jsx"

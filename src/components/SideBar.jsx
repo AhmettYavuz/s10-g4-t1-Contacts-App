@@ -1,17 +1,14 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import axios from "axios";
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
+import { useContacts } from "../services/tanStack";
 
 export default function SideBar() {
-  const [contacts, setContacts] = useState([]);
+  const { isPending, error, data: contacts } = useContacts();
 
-  useEffect(() => {
-    axios
-      .get('https://65b36193770d43aba479a2f2.mockapi.io/users')
-      .then((res) => {
-        setContacts(res.data);
-      });
-  });
+  if (isPending) return "Loading...";
+
+  if (error) return "Error occured !..";
 
   return (
     <div id="sidebar">
@@ -33,7 +30,7 @@ export default function SideBar() {
                   to={`/contacts/${contact.id}`}
                   data-testid="contact"
                   className={({ isActive, isPending }) =>
-                    isActive ? 'active' : isPending ? 'pending' : ''
+                    isActive ? "active" : isPending ? "pending" : ""
                   }
                 >
                   {contact.first_name || contact.last_name ? (
@@ -42,7 +39,7 @@ export default function SideBar() {
                     </>
                   ) : (
                     <i>No Name</i>
-                  )}{' '}
+                  )}{" "}
                   {contact.favorite && <span>★</span>}
                 </NavLink>
               </li>

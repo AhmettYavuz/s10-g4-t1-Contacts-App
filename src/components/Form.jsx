@@ -1,6 +1,8 @@
-import React from 'react';
-import { useHistory } from 'react-router-dom';
-import { useForm } from 'react-hook-form';
+import React from "react";
+import { useHistory } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import axios from "axios";
+import { useAddContact } from "../services/tanStack";
 
 export default function Form() {
   const history = useHistory();
@@ -8,15 +10,14 @@ export default function Form() {
     register,
     handleSubmit,
     formState: { isValid, errors },
-  } = useForm({ mode: 'all' });
+  } = useForm({ mode: "all" });
+
+  const addContactMuatation = useAddContact();
 
   const handleFormSubmit = (data) => {
     if (!isValid) return;
-    axios
-      .post(`https://65b36193770d43aba479a2f2.mockapi.io/users`, data)
-      .then((res) => {
-        history.push('/');
-      });
+    addContactMuatation.mutate(data);
+    history.push("/");
   };
 
   return (
@@ -26,12 +27,12 @@ export default function Form() {
         <input
           placeholder="First"
           type="text"
-          {...register('first_name', { required: 'Name is required' })}
+          {...register("first_name", { required: "Name is required" })}
         />
         <input
           placeholder="Last"
           type="text"
-          {...register('last_name', { required: 'Last Name is required' })}
+          {...register("last_name", { required: "Last Name is required" })}
         />
       </p>
       <label>
@@ -39,7 +40,7 @@ export default function Form() {
         <input
           type="text"
           placeholder="@wit.com.tr"
-          {...register('email', { required: 'Email Address is required' })}
+          {...register("email", { required: "Email Address is required" })}
         />
       </label>
       <label>
@@ -47,7 +48,7 @@ export default function Form() {
         <input
           placeholder="https://example.com/avatar.jpg"
           type="text"
-          {...register('avatar', { required: 'Avatar is required' })}
+          {...register("avatar", { required: "Avatar is required" })}
         />
       </label>
       {Object.keys(errors).length !== 0 && (
