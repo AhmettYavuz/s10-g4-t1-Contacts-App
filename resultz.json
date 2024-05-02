@@ -8,7 +8,7 @@
   "numFailedTests": 9,
   "numPendingTests": 0,
   "numTodoTests": 0,
-  "startTime": 1714651220597,
+  "startTime": 1714656341759,
   "success": false,
   "testResults": [
     {
@@ -20,7 +20,7 @@
           "fullName": " App.jsxe QueryClientProvider eklenmiş",
           "status": "failed",
           "title": "App.jsxe QueryClientProvider eklenmiş",
-          "duration": 21,
+          "duration": 24,
           "failureMessages": [
             "expected '/*eslint-disablejsx-a11y/anchor-is-va…' to include '<QueryClientProvider'"
           ],
@@ -52,7 +52,7 @@
           "fullName": " Contact componentinde useEffect kaldırılmış",
           "status": "failed",
           "title": "Contact componentinde useEffect kaldırılmış",
-          "duration": 4,
+          "duration": 5,
           "failureMessages": [
             "expected 'importaxiosfrom\\'axios\\';importReact,…' to not include 'useEffect(()=>{'"
           ],
@@ -68,7 +68,7 @@
           "fullName": " Contactlar listeleniyor",
           "status": "failed",
           "title": "Contactlar listeleniyor",
-          "duration": 5,
+          "duration": 6,
           "failureMessages": [
             "expected 'Once tanStackQueryi ekleyin ve useEff…' to be 'Implemented' // Object.is equality"
           ],
@@ -100,7 +100,7 @@
           "fullName": " Yeni kullanıcı kayıt ediliyor",
           "status": "failed",
           "title": "Yeni kullanıcı kayıt ediliyor",
-          "duration": 5,
+          "duration": 4,
           "failureMessages": [
             "expected 'Once tanStackQueryi ekleyin ve useEff…' to be 'Implemented' // Object.is equality"
           ],
@@ -158,11 +158,11 @@
           }
         }
       ],
-      "startTime": 1714651300469,
-      "endTime": 1714651300531,
+      "startTime": 1714656342590,
+      "endTime": 1714656342655,
       "status": "failed",
       "message": "",
-      "name": "/home/projects/vitejs-vite-8hrylz/src/__tests__/index.test.jsx"
+      "name": "/Users/ahmet/Documents/GitHub/projects/s10-g4-t1-Contacts-App/src/__tests__/index.test.jsx"
     }
   ]
 }
